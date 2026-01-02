@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  spark-app:
+    build: .
+    image: pyspark-truck-app:latest
+    container_name: pyspark-truck-app
+    environment:
+      - MODE=production
+      - INPUT_PATH=/data/input_truck_traffic.csv
+      - OUTPUT_PATH=/data/output
+    volumes:
+      - ./data:/data
+    restart: "no"
