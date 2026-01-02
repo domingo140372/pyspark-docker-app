@@ -28,8 +28,3 @@ Cómo ejecutar con Docker (demo)
 Ejecutar tests localmente
 - pip install -r requirements.txt
 - pytest -q
-
-Si deseas, puedo:
-- Aumentar el dataset de ejemplo con datos reales (si me permites descargar o me proporcionas un enlace).
-- Añadir logs, métricas o integración con S3/HDFS.
-- Ajustar transformaciones a tu esquema real.
